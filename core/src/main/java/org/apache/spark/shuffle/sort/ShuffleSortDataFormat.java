@@ -71,8 +71,7 @@ final class ShuffleSortDataFormat extends SortDataFormat<PackedRecordPointer, Lo
 
   @Override
   public LongArray allocate(int length) {
-    assert (length <= buffer.size()) :
-      "the buffer is smaller than required: " + buffer.size() + " < " + length;
+    assert (length <= buffer.size()) : "the buffer is smaller than required: " + buffer.size() + " < " + length;
     return buffer;
   }
 }

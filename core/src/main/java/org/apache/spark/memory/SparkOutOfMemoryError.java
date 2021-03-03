@@ -16,6 +16,7 @@
  */
 package org.apache.spark.memory;
 
+import org.apache.hadoop.classification.InterfaceAudience;
 import org.apache.spark.annotation.Private;
 
 /**
@@ -23,7 +24,7 @@ import org.apache.spark.annotation.Private;
  * Instead of throwing {@link OutOfMemoryError}, which kills the executor,
  * we should use throw this exception, which just kills the current task.
  */
-@Private
+@InterfaceAudience.Private
 public final class SparkOutOfMemoryError extends OutOfMemoryError {
 
     public SparkOutOfMemoryError(String s) {

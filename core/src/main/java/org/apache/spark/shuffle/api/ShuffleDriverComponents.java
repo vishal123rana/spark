@@ -19,13 +19,14 @@ package org.apache.spark.shuffle.api;
 
 import java.util.Map;
 
+import org.apache.hadoop.classification.InterfaceAudience;
 import org.apache.spark.annotation.Private;
 
 /**
  * :: Private ::
  * An interface for building shuffle support modules for the Driver.
  */
-@Private
+@InterfaceAudience.Private
 public interface ShuffleDriverComponents {
 
   /**
